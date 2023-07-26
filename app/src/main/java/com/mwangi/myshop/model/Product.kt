@@ -1,7 +1,10 @@
-package com.mwangi.myshop
+package com.mwangi.myshop.model
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 import java.security.cert.CertificateNotYetValidException
 
+@Parcelize
 data class Product(
     var id: Int,
     var title: String,
@@ -12,4 +15,4 @@ data class Product(
     var brand: String,
     var category: String,
     var thumbnail: String
-)
+):Parcelable
